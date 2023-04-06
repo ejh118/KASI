@@ -1,0 +1,27 @@
+@import url(common.css);
+footer{
+  margin-top: 100px;
+  width: 100%;
+  background-color: #000;
+}
+.footer_menu{
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  font-size: 10px;
+}
+.footer_menu li{
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.copyright{
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 8px;
+  width: 70%;
+}
+.copyright span{
+  font-size: 8px;
+}

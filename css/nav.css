@@ -1,0 +1,115 @@
+body{
+  color: #fff;
+  background-color: #111;
+  font-family: 'Noto Sans KR', sans-serif; 
+  width: 100%;
+}
+header{
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #16161694;
+}
+#logo{
+  margin-left: 20px;
+  cursor: pointer;
+}
+.lang{
+  display: flex;
+  width: 70px;
+  height: 30px;
+  margin-left: 15%;
+}
+.lang .kr{
+  background-color: #fff;
+  color: #111;
+}
+.lang div{
+  text-align: center;
+  line-height: 30px;
+  flex: 1;
+}
+.trigger{
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.trigger span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.trigger span:nth-child(1){top: 0;}
+.trigger span:nth-child(2){top: 50%;}
+.trigger span:nth-child(3){top: 100%;}
+
+.trigger.active span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2){opacity: 0;}
+.trigger.active span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.gnbBox{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: none;
+}
+
+.searchBar{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 30px;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.gnb{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.gnb li{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  
+}
+.sns{
+  position: absolute;
+  display: flex;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.sns li{
+  font-size: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+}
