@@ -3,7 +3,7 @@
 
 #wrap{
   position:fixed;
-  z-index: 15200;
+  z-index: 9999;
   left:10px;
   top:10px;
   color: #00ff0d;
@@ -17,6 +17,7 @@ main{
   width: 100%;
   height: 100vh;
   color: #fff;
+  overflow: hidden;
 }
 .mainText{
   position: absolute;
@@ -108,4 +109,27 @@ nav{
 section{
   width: 100%;
   height: 2000px;
+}
+article{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.Text1{
+  margin-top: 200px;
+  text-align: left;
+}
+.Text1 h2{
+  font-size: 26px;
+  font-weight: 500;
+}
+.WhatWedo{
+  display: flex;
+  margin-top: 15px;
+}
+.mission{
+  width: 100%;
+  margin-top: 100px;
+  transition: 0.3s;
+  opacity: 0;
 }

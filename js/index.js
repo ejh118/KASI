@@ -19,17 +19,32 @@ $(document).ready(function(){
 
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 800){
+    if(scollpos > 700){
       $("header").css({"background-color":"#fff","border-bottom":"1px solid #eee"});
       $(".trigger span").css({"background-color":"#000"})
       $("#logo").attr("src","image/logo_black.png")
       chek=false;
     }else{
-      $("header").css({"background-color":"transparent","border":"none"});
+      $("header").css({"background-color":"rgba(19, 19, 19, 0.74)","border":"none"});
       $(".trigger span").css({"background-color":"#fff"});
 
       $("#logo").attr("src","image/logo.png")
     }
-
+    
   });
+
+  $(window).scroll(function(){
+
+    let scollpos=$(this).scrollTop();
+    chek=true;
+    if(scollpos > 900){
+      $(".mission").css({"width":"100%","position":"fixed","top":"100px","left":"0","opacity":"1"});
+      chek=false;
+    }else{
+      $(".mission").css({"width":"100%","position":"fixed","opacity":"0"});
+    }
+  });
+
+
+
 });
