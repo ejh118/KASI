@@ -27,7 +27,6 @@ section{
   width: 100%;
   overflow: scroll;
   margin-top: 32px;
-  margin-left: 20px;
    /* 가로 스크롤 */
   overflow: auto;
   white-space: nowrap;
@@ -59,8 +58,8 @@ article{
   margin-bottom: 15px;
 }
 .infotext p{
-  font-size: 10px;
-  width: 271px;
+  font-size: 12px;
+  width: 95%;
   margin: auto;
 }
 .infotext p span{
@@ -73,7 +72,9 @@ article{
   width: 95%;
   margin: auto;
 }
-
+.content p{
+  font-size: 12px;
+}
 /* _____content1 start______ */
 
 .content1{
@@ -91,7 +92,6 @@ article{
 }
 
 .content1_Right p{
-  font-size: 10px;
   width: 207px;
 }
 
@@ -109,7 +109,6 @@ article{
 }
 .content2_Left p{
   width: 202px;
-  font-size: 10px;
 }
 .content2_Left p span{
   color: #D9D000;
@@ -119,3 +118,21 @@ article{
   height: 130px;
   border-radius: 20px;
 }
+
+/* _____content2 end_____ */
+/* _____content3 start_____ */
+
+.content3{
+  margin-top: 68px;
+  text-align: center;
+}
+.content3 img{
+  width: 95%;
+  border-radius: 20px;
+}
+.content3_bottom p{
+  text-align: center;
+  width: inherit;
+  margin-top: 30px;
+}
+/* _____content3 end_____ */
