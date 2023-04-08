@@ -27,6 +27,7 @@ section{
   width: 100%;
   overflow: scroll;
   margin-top: 32px;
+  margin-left: 20px;
    /* 가로 스크롤 */
   overflow: auto;
   white-space: nowrap;
@@ -40,4 +41,81 @@ section{
   border: 1px solid yellowgreen;
   border-radius: 20px;
   font-size: 15px;
+}
+
+article{
+  width: 95%;
+  margin: auto;
+}
+
+.infotext{
+  margin-top: 71px;
+  text-align: center;
+}
+
+.infotext h2{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.infotext p{
+  font-size: 10px;
+  width: 271px;
+  margin: auto;
+}
+.infotext p span{
+  color: #D9D000;
+}
+
+/* content 영역 */
+
+.content{ /* 각 content 영역 공통사항 */
+  width: 95%;
+  margin: auto;
+}
+
+/* _____content1 start______ */
+
+.content1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: inherit;
+  height: 130px;
+  margin-top: 47px;
+}
+.content1 img{
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+}
+
+.content1_Right p{
+  font-size: 10px;
+  width: 207px;
+}
+
+.content1_Right p span{
+  color: #D9D000;
+}
+
+/* _____content1 end_____ */
+/* _____content2 start_____ */
+.content2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 63px;
+}
+.content2_Left p{
+  width: 202px;
+  font-size: 10px;
+}
+.content2_Left p span{
+  color: #D9D000;
+}
+.content2_Right img{
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
 }
