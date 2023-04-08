@@ -1,8 +1,16 @@
 @import url(common.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+#wrap{
+  position:fixed;
+  z-index: 15200;
+  left:10px;
+  top:10px;
+  color: #00ff0d;
+}
 body{
   font-family: 'Noto Sans KR', sans-serif; 
+  width: 100%;
 }
 main{
   position: relative;
@@ -13,18 +21,26 @@ main{
 .mainText{
   position: absolute;
   z-index: 1;
-  bottom: 100px;
-  left: 20px;
-  font-size: 18px;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  font-size: 15px;
+  text-align: left;
+  border-left: 3px solid #f37321;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 main video{
   height: 100%;
 }
 header{
-  position: absolute;
+  position: fixed;
+  z-index: 200;
   width: 100%;
   height: 60px;
   background-color: transparent;
+  transition: 0.5s;
 }
 nav{
   display: flex;
@@ -36,10 +52,14 @@ nav{
 #logo{
   width: 150px;
   margin-left: 20px;
+  transition: 0.3s;
+}
+#logo.active{
+  opacity: 0;
 }
 .trigger{
   position: relative;
-  z-index: 1001;
+  z-index: 101231;
   width: 35px;
   height: 20px;
   margin-right: 20px;
@@ -62,8 +82,8 @@ nav{
 
 /* gnb */
 .gnbBox{
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
+  z-index: 100;
   right: -100%;
   display: flex;
   justify-content: center;
@@ -84,4 +104,8 @@ nav{
 }
 .gnb li{
   padding: 5px;
+}
+section{
+  width: 100%;
+  height: 2000px;
 }
