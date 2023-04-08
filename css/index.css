@@ -130,6 +130,7 @@ article{
   margin-top: 15px;
 }
 .article2{
+  position: relative;
   margin-top: 100px;
   height: 4000px;
   overflow: hidden;
@@ -141,15 +142,15 @@ article{
   height: 200px;
   transition: 0.3s;
 }
-.fixed_Content h2{
-  position: absolute;
-  width: 310px;
-  top: 380px;
-  left: 30px;
-  color: #fff;
-  text-align: left;
-}
 .fixed_Content img{
   width: 200%;
   height: 800px;
+}
+
+.article2_Text{
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  text-align: left;
+  color: #fff;
 }
