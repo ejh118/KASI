@@ -47,6 +47,21 @@ $(document).ready(function(){
     }
     
   });
+  $(window).scroll(function(){
+
+    let scollpos=$(this).scrollTop();
+    chek=true;
+    if(scollpos > 2000){
+      $(".fixed_Content img").attr("src","image/mission-02.jpg");
+      $(".fixed_Content h2").text("지속가능한 성장을 위한 햄심기술 개발에 집중합니다.");
+
+      chek=false;
+    }else{
+      $(".fixed_Content img").attr("src","image/mission-01.jpg");
+      $(".fixed_Content h2").text("우리의 솔루션으로 지구보호와 세계평화를 추구합니다.");
+    }
+    
+  });
 
 
 
