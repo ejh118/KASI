@@ -12,7 +12,6 @@ $(document).ready(function(){
   $(".trigger").click(function(){
     $(this).toggleClass("active");
     $(".gnbBox").toggleClass("active");
-    $("#logo").toggleClass("active");
   });
 
   $(window).scroll(function(){
@@ -37,12 +36,16 @@ $(document).ready(function(){
 
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 900){
-      $(".mission").css({"width":"100%","position":"fixed","top":"100px","left":"0","opacity":"1"});
+    if(scollpos > 1100){
+      $("body").css({"background-color":"#000"});
+      $(".fixed_Content").css({"position":"fixed","opacity":"1"});
+      
       chek=false;
     }else{
-      $(".mission").css({"width":"100%","position":"fixed","opacity":"0"});
+      $("body").css({"background-color":"#fff"});
+      $(".fixed_Content").css({"opacity":"0"});
     }
+    
   });
 
 
