@@ -15,7 +15,6 @@ header{
   height: 60px;
   background-color: #00c88c;
 }
-
 nav{
   width: 100%;
   height: 60px;
@@ -23,8 +22,9 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
+
 #logo{
-  height: 30px;
+  width: 100px;
   margin-left: 20px;
 }
 .trigger{
@@ -39,13 +39,108 @@ nav{
   width: inherit;
   height: 2px;
   background-color: #fff;
+  transition: 0.3s;
 }
 
+/* 메뉴창 */
+.gnbBar{
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 100vh;
+  background-color: #00c88c;
+  color: #fff;
+}
+.gnbBar_in{
+  margin-left: 50px;
+}
+.loginbox{
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  left: 0;
+}
+.loginBox_Text{
+  margin-left: 20px;}
+.loginBox_Text h6{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.loginBox_Text p{font-size: 10px;}
+.Rarrow{margin-left: 54px;}
+
+.loginBox_SubMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 22px;
+  margin-top: 55px;
+}
+#mypageBtn{
+  font-size: 13px;
+  margin-right: 20px;
+}
+.loginBox_SubMenu_Left{
+  display: flex;
+  font-size: 18px;
+}
+.loginBox_SubMenu_Left p{
+  padding: 0 27px;
+}
+.loginBox_SubMenu_Left p:nth-child(1){
+  border-right: 1px solid #fff;
+}
+.gnb{
+  margin-top: 83px;
+}
+.gnb li{
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+.gnb li span{
+  font-size: 12px;
+  margin-left: 20px;
+  color: #333333;
+}
+
+.sns img{
+  width: 30px;
+  margin: 30px 30px 0 0;
+}
+
+/* 메뉴창 끝 */
 .trigger span:nth-child(1){top: 0;}
 .trigger span:nth-child(2){top: 50%;}
 .trigger span:nth-child(3){top: 100%;}
 
+.trigger.active span:nth-child(1){top: 50%; transform: rotate(45deg);}
+.trigger.active span:nth-child(2){opacity: 0;}
+.trigger.active span:nth-child(3){top: 50%; transform: rotate(-45deg);}
 
+.popUp{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  justify-content: space-around;
+  bottom: 0;
+  align-items: center;
+  background-color: rgba(48, 48, 48, 0.288);
+}
+.popUp p{
+  font-size: 12px;
+}
+.popUp p span{
+  color: yellow;
+}
+.popUp img{
+  width: 30px;
+  border-radius: 5px;
+}
+.closePopUp{
+  cursor: pointer;
+  padding: 10px;
+}
 /* main */
 
 main{
@@ -53,11 +148,11 @@ main{
   width: 100%;
   height: 600px;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
 }
 main h2{
   margin-top: 70px;
-  line-height: 55px;
+  line-height: 45px;
 }
 main h2 span{
   color: #00c88c;
@@ -73,7 +168,7 @@ main p{
 }
 #download_Btn{
   width: 40%;
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   border: none;
   background-color: #00c88c;
