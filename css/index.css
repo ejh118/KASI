@@ -11,6 +11,7 @@ body{
   width: 100%;
 }
 header{
+  position: fixed;
   width: 100%;
   height: 60px;
   background-color: #00c88c;
@@ -44,15 +45,19 @@ nav{
 
 /* 메뉴창 */
 .gnbBar{
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: -90%;
   width: 90%;
   height: 100vh;
   background-color: #00c88c;
   color: #fff;
+  transition: 0.3s;
+}
+.gnbBar.active{
+  right: 0%;
 }
 .gnbBar_in{
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .loginbox{
   display: flex;
@@ -60,24 +65,23 @@ nav{
   margin-top: 60px;
   left: 0;
 }
-.loginBox_Text{
-  margin-left: 20px;}
-.loginBox_Text h6{
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+.loginBox_Text{margin-left: 20px;}
+.loginBox_Text h6{font-size: 18px; margin-bottom: 10px;}
 .loginBox_Text p{font-size: 10px;}
 .Rarrow{margin-left: 54px;}
 
 .loginBox_SubMenu{
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 22px;
-  margin-top: 55px;
+  margin-top: 35px;
+}
+.loginBox_SubMenu p{margin-right: 40px;}
+.loginBox_SubMenu p:nth-child(1){
+  padding-right: 10px;
 }
 #mypageBtn{
-  font-size: 13px;
+  font-size: 10px;
   margin-right: 20px;
 }
 .loginBox_SubMenu_Left{
@@ -91,7 +95,7 @@ nav{
   border-right: 1px solid #fff;
 }
 .gnb{
-  margin-top: 83px;
+  margin-top: 53px;
 }
 .gnb li{
   margin-bottom: 26px;
@@ -146,14 +150,13 @@ nav{
 main{
   font-family: 'GmarketSansMedium';
   width: 100%;
-  height: 600px;
+  height: 700px;
   text-align: center;
   font-size: 24px;
 }
-main h2{
-  margin-top: 70px;
-  line-height: 45px;
-}
+
+main h2{line-height: 45px; padding-top: 130px;}
+
 main h2 span{
   color: #00c88c;
 }
