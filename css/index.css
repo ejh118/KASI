@@ -96,10 +96,13 @@ nav{
 }
 .gnb{
   margin-top: 53px;
+  width: 40%;
 }
 .gnb li{
   margin-bottom: 26px;
+  padding-bottom: 5px;
   font-size: 15px;
+  border-bottom: 1px solid #00996b;
 }
 .gnb li span{
   font-size: 12px;
@@ -183,4 +186,48 @@ section{
   width: 100%;
   height: 3000px;
   background-color: #efefef;
+}
+
+/* article1 */
+
+.article1{
+  width: 100%;
+  color: #fff;
+  background-color: #00c88c;
+}
+.article1_one{
+  position: relative;
+  width: 100%;
+  height: 367px;
+  margin: auto;
+  background: url(../image/main_pic_01.png);
+}
+.article1_one h2{
+  position: absolute;
+  margin-left: 10px;
+  top: 280px;
+  font-weight: 400;
+}
+.article1_one h2 span{
+  color: #00c88c;
+  font-weight: 700;
+}
+.article1_two{
+  position: relative;
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+.article1_two img{
+  position: absolute;
+  top: -170px;
+  right: 0;
+  width: 30%;
+}
+.article1_two_Text{
+  padding: 30px 0;
+}
+.article1_two p{
+  font-size: 12px;
+  margin-bottom: 10px;
 }
