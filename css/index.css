@@ -362,7 +362,6 @@ section{
   align-items: center;
   width: inherit;
   margin-top: 70px;
-  opacity: 0;
   transition: 0.3s;
 }
 .stepText{
