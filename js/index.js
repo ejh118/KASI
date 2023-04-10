@@ -93,7 +93,7 @@ $(document).ready(function(){
       $(".art4_1").css({"opacity":"1"});
       chek=false;
     }else{
-      $(".art4_1").css({"opacity":"0"});
+      $(".art4_1").css({"opacity":"0.3"});
     }
   });
   $(window).scroll(function(){
@@ -103,7 +103,7 @@ $(document).ready(function(){
       $(".art4_2").css({"opacity":"1"});
       chek=false;
     }else{
-      $(".art4_2").css({"opacity":"0"});
+      $(".art4_2").css({"opacity":"0.3"});
     }
   });
   $(window).scroll(function(){
@@ -113,7 +113,7 @@ $(document).ready(function(){
       $(".art4_3").css({"opacity":"1"});
       chek=false;
     }else{
-      $(".art4_3").css({"opacity":"0"});
+      $(".art4_3").css({"opacity":"0.3"});
     }
   });
   $(window).scroll(function(){
@@ -123,7 +123,7 @@ $(document).ready(function(){
       $(".art4_4").css({"opacity":"1"});
       chek=false;
     }else{
-      $(".art4_4").css({"opacity":"0"});
+      $(".art4_4").css({"opacity":"0.3"});
     }
   });
   $(window).scroll(function(){
@@ -133,7 +133,7 @@ $(document).ready(function(){
       $(".art4_5").css({"opacity":"1"});
       chek=false;
     }else{
-      $(".art4_5").css({"opacity":"0"});
+      $(".art4_5").css({"opacity":"0.3"});
     }
   });
 
