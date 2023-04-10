@@ -89,7 +89,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 2000){
+    if(scollpos > 1700){
       $(".art4_1").css({"opacity":"1"});
       chek=false;
     }else{
@@ -99,7 +99,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 2400){
+    if(scollpos > 2200){
       $(".art4_2").css({"opacity":"1"});
       chek=false;
     }else{
@@ -109,7 +109,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 2800){
+    if(scollpos > 2500){
       $(".art4_3").css({"opacity":"1"});
       chek=false;
     }else{
@@ -119,7 +119,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 3200){
+    if(scollpos > 2900){
       $(".art4_4").css({"opacity":"1"});
       chek=false;
     }else{
@@ -129,7 +129,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
-    if(scollpos > 3600){
+    if(scollpos > 3200){
       $(".art4_5").css({"opacity":"1"});
       chek=false;
     }else{
