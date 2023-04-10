@@ -18,6 +18,7 @@ $(document).ready(function(){
     $(".L_Point_Member").css({"background-color":"#efefef","color":"#111"});
     $("#idform").attr("placeholder","그린카 ID 또는 메일주소 입력");
     $("#pwform").attr("placeholder","그린카 비밀번호 입력");
+    $("#signup_Btn").text('그린카 회원가입');
   });
   $(".L_Point_Member").click(function(){ //로그인 메뉴 바꿀 시
     $(".login_Info_Text").text('*하나의 L.POINT 통합 아이디로 L.POINT 제휴사 이용이 가능합니다.');
@@ -25,6 +26,7 @@ $(document).ready(function(){
     $(".greenCar_Member").css({"background-color":"#efefef","color":"#111"});
     $("#idform").attr("placeholder","L.POINT 통합 아이디 입력");
     $("#pwform").attr("placeholder","L.POINT 통합 비밀번호 입력");
+    $("#signup_Btn").text('L.POINT 통합 회원가입');
   });
 
 
