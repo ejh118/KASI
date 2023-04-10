@@ -12,24 +12,45 @@ $(document).ready(function(){
     $(".popUp").slideUp();
   });
 
-  $(".book_list").click(function(){ //로그인 메뉴 바꿀 시
-    $(this).css({"background-color":"#00c88c","color":"#fff"});
-    $(".history_list").css({"background-color":"#efefef","color":"#111"});
-    $(".history_list_infoText").text("");
-    $(".banner").css({"display":"block"});
-  });
-  $(".history_list").click(function(){ //로그인 메뉴 바꿀 시
-    $(this).css({"background-color":"#00c88c","color":"#fff"});
-    $(".book_list").css({"background-color":"#efefef","color":"#111"});
-    $(".history_list_infoText").text("*최근 6개월 대여, 예약취소내역(수수료발생건)만 제공됩니다.");
-    $(".banner").css({"display":"none"});
-  });
+$(".mainMenu div").click(function(){
+  $(this).addClass("active");
+  $(this).siblings().removeClass("active");
+});
+/* 종료버튼 눌렀을 시 done_list 생성 */
 
-  /* 광고배너 */
+$(".subMenu div").click(function(){
+  $(this).addClass("active");
+  $(this).siblings().removeClass("active");
 
-  $(".cancelBtn").click(function(){
-    $(".banner").css({"display":"none"});
-  });
+
+  let result = $(this).attr("data-alt");
+  $(".list").removeClass("active");
+  $("#"+$(this).attr("data-alt")).addClass("active");
+
+});
+
+/* 메인메뉴 */
+$(".mainMenu div").click(function(){
+  $(this).addClass("active");
+  $(this).siblings().removeClass("active");
+
+
+  let result = $(this).attr("data-alt");
+  $(".M_Menu").removeClass("active");
+  $("#"+$(this).attr("data-alt")).addClass("active");
+});
+
+/* 서브메뉴 */
+$(".subMenu div").click(function(){
+  $(this).addClass("active");
+  $(this).siblings().removeClass("active");
+
+
+  let result = $(this).attr("data-alt");
+  $(".list").removeClass("active");
+  $("#"+$(this).attr("data-alt")).addClass("active");
+});
+
 
 
 });
