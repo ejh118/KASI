@@ -1,0 +1,296 @@
+@import url(common.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+body{  
+  position: relative;
+  width: 100%;
+}
+
+/* section 시작 */
+
+section{
+  width: 100%;
+  margin-top: 100px;
+}
+.mainTitle{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* 메인버튼 스타일 시작 */
+
+.mainMenu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #eee;
+}
+.mainMenu div{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.mainMenu div.active{
+  background-color: #00c88c;
+  color: #fff;
+}
+article{
+  width: 95%;
+  margin: auto;
+}
+.info_List_All{
+  display: none;
+}
+.subTitle{
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #00c88c;
+}
+.info_List li{
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #00c88c;
+}
+.listIcon{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.icon{
+  position: relative;
+  flex: 1;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+.listText{
+  flex: 5;
+  margin-left: 50px;
+}
+.icon::before{
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #00c88c;
+  transform: rotate(45deg);
+}
+.listTitle{
+  font-size: 16px;
+  font-weight: 600;
+  color: #00c88c;
+}
+.listSub{
+  font-size: 14px;
+}
+
+/* tip */
+/* tip */
+/* tip */
+.tip{
+  text-align: center;
+  margin: 20px 0;
+}
+.tip p{
+  font-size: 12px;
+}
+.tip_box{
+  padding: 0 5px;
+  color: #fff;
+  background-color: #00c88c;
+}
+
+/* 요금안내 */
+/* 요금안내 */
+/* 요금안내 */
+/* 요금안내 */
+.payInfo_AllAll{
+  display: none;
+}
+.subMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 50px;
+  background-color: #eee;
+  margin: 30px auto;
+}
+.pay_All{
+  display: none;
+}
+.subMenu div{
+  width: 100%;
+  height: inherit;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.subMenu div.active{
+  background-color: #00c88c;
+  color: #fff;
+}
+.pay_info_Text{
+  width: 85%;
+  margin: auto;
+  font-size: 12px;
+  color: #00c88c;
+  text-align: center;
+}
+
+/* 테이블 */
+/* 테이블 */
+/* 테이블 */
+
+table{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+table caption{
+  text-align: right;
+  margin-bottom: 10px;
+}
+table td{
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+table th{
+  color: #fff;
+  background-color: #00c88c;
+  border: 1px solid #ccc;
+}
+.th{
+  color: #fff;
+  background-color: #00c88c;
+}
+
+/* 주행요금 안내 */
+
+.drivePay_All{
+  width: 85%;
+  margin: auto;
+  display: none;
+}
+
+/* 보험 안내 */
+
+.insurance_All{
+  width: 85%;
+  margin: 50px auto;
+  display: none;
+}
+
+.insurance_Main_Text{
+  color: #00c88c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.nsurance_sub_Text{
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.bottom_info{
+  margin-top: 50px;
+  color: #04241a;
+  padding: 5px;
+}
+.bottom_info_title{
+  font-size: 20px;
+  color: #00c88c;
+}
+.bottom_info_sub{
+  font-size: 12px;
+  margin-top: 20px;
+}
+#b_info_btn{
+  background-color: #00c88c;
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* 혜택 */
+
+.benefit_ul{
+  width: 85%;
+  margin: auto;
+}
+.main_li{
+  display: flex;
+  border-bottom: 1px solid #111;
+}
+
+.main_p{
+  width: 150px;
+}
+
+
+/* 공유하기 */
+/* 공유하기 */
+/* 공유하기 */
+/* 공유하기 */
+
+.share{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.share_Text{
+  display: flex;
+}
+.share_sns{
+  display: flex;
+}
+.share_sns li{
+  padding: 5px;
+}
+.share_sns li img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.time_info{
+  width: 85%;
+  margin: 20px auto;
+}
+.s_time_text{
+  font-size: 12px;
+}
+.s_time_text span{
+  color: #00c88c;
+  margin-right: 20px;
+}
+.b_time_text{
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777;
+}
+.pay_more_Btn{
+  width: 100%;
+  height: 40px;
+  margin: 40px auto;
+  color: #fff;
+  background-color: #00c88c;
+  border: none;
+  cursor: pointer;
+}
