@@ -118,6 +118,7 @@ article{
 .payInfo_AllAll{
   display: none;
 }
+
 .subMenu{
   display: flex;
   justify-content: space-around;
@@ -127,9 +128,7 @@ article{
   background-color: #eee;
   margin: 30px auto;
 }
-.pay_All{
-  display: none;
-}
+
 .subMenu div{
   width: 100%;
   height: inherit;
@@ -148,7 +147,12 @@ article{
   color: #00c88c;
   text-align: center;
 }
-
+.pay_All{
+  display: none;
+}
+.active{
+  display: block;
+}
 /* 테이블 */
 /* 테이블 */
 /* 테이블 */
@@ -179,13 +183,22 @@ table th{
 }
 
 /* 주행요금 안내 */
-
+.drivePay_table{
+  width: 100%;
+}
 .drivePay_All{
   width: 85%;
   margin: auto;
   display: none;
 }
-
+.drivePay_All p{
+  font-size: 14px;
+  margin-top: 20px;
+  color: #777;
+}
+.drivePay_All.active{
+  display: block;
+}
 /* 보험 안내 */
 
 .insurance_All{
@@ -193,7 +206,9 @@ table th{
   margin: 50px auto;
   display: none;
 }
-
+.insurance_All.active{ /* js에서 켬 */
+  display: block;
+}
 .insurance_Main_Text{
   color: #00c88c;
   font-size: 20px;
@@ -229,21 +244,23 @@ table th{
 }
 
 /* 혜택 */
-
-.benefit_ul{
+.benefit_All{
   width: 85%;
   margin: auto;
+  display: none;
 }
-.main_li{
-  display: flex;
-  border-bottom: 1px solid #111;
+.benefit_All.active{display: block;} /* js에서 켬 */
+.benefit_table tr td:nth-child(1){
+  background-color: #00c88c;
+  color: #fff;
 }
-
-.main_p{
-  width: 150px;
+.banner{
+  width: 85%;
+  margin: 40px auto;
 }
-
-
+.banner img{
+  width: 100%;
+}
 /* 공유하기 */
 /* 공유하기 */
 /* 공유하기 */

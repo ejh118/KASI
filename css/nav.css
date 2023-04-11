@@ -62,57 +62,31 @@ nav{
   right: 0%;
 }
 .gnbBar_in{
-  margin-top: 80px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .loginbox{
+  margin-top: 60px;
   display: flex;
   align-items: center;
-  left: 0;
-  cursor: pointer;
+  justify-content: space-around;
 }
-.loginBox_Text{margin-left: 20px;}
-.loginBox_Text h6{font-size: 18px; margin-bottom: 10px;}
-.loginBox_Text p{font-size: 10px;}
-.Rarrow{margin-left: 54px;}
-
 .loginBox_SubMenu{
   display: flex;
-  align-items: center;
-  height: 22px;
-  margin-top: 55px;
+  margin-top: 30px;
+  color: #00c88c;
 }
-.loginBox_SubMenu p{margin-right: 40px;}
-.loginBox_SubMenu p:nth-child(1){
-  padding-right: 10px;
+.loginBox_SubMenu p{
+  padding-right: 20px;
 }
-#mypageBtn{
-  font-size: 10px;
-  margin-right: 20px;
-}
-.loginBox_SubMenu_Left{
-  display: flex;
-  font-size: 18px;
-}
-.loginBox_SubMenu_Left p{
-  padding: 0 27px;
-}
-.loginBox_SubMenu_Left p:nth-child(1){
-  border-right: 1px solid #fff;
+.loginBox_Text{
+  font-size: 14px;
+  margin-right: 50px;
 }
 .gnb{
-  margin-top: 53px;
-  width: 60%;
+  margin-top: 30px;
 }
 .gnb li{
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  font-size: 15px;
-}
-.gnb li span{
-  font-size: 12px;
-  margin-left: 20px;
-  color: #333333;
 }
 
 .sns img{

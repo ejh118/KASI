@@ -40,8 +40,8 @@
             <li><a href="book.html">예약확인</a></li>
             <li><a href="center.html">고객센터<span>흡연신고 1:1 문의</span></a></li>
             <li><a href="event.html">이벤트 & 제휴혜택</a></li>
-            <li><a href="#none">이용 & 상품안내</a></li>
-            <li><a href="#none">법인/단체</a></li>
+            <li><a href="use_info.html">이용 & 상품안내</a></li>
+            <li><a href="corporation.html">법인/단체</a></li>
           </ul>
           <div class="sns">
             <img src="image/blog.png" alt="">
@@ -67,7 +67,7 @@
       </div>
     </div>
     <article>
-      <div class="info_List_All">
+      <div class="info_List_All M_All active" id="M_tab1">
         <h3 class="subTitle">매일 새로운 내 차와 만나다!</h3>
         <ul class="info_List">
           <li>
@@ -149,71 +149,73 @@
           </p>
         </div>
       </div>
-      <div class="payInfo_AllAll">
-        <h2 class="subTitle">요금안내</h2>
+      <div class="payInfo_AllAll M_All" id="M_tab2">
+        <h3 class="subTitle">요금안내</h3>
         <div class="subMenu">
-          <div class="dis_Btn active">
+          <div class="dis_Btn active" data-alt="S_tab1">
             <p>할인대여요금</p>
           </div>
-          <div class="drivePay_Btn">
+          <div class="drivePay_Btn" data-alt="S_tab2">
             <p>주행요금</p>
           </div>
         </div>
-        <div class="pay_All">
+        <div class="pay_All dpAll active" id="S_tab1">
           <p class="pay_info_Text">
             그린카는 상시 이벤트(차종 및 지역)를 진행하여 표준 대여요금 보다 더욱 저렴하게 이용 가능합니다.
           </p>
           <table class="dis_table">
-            <caption>(단위:원)</caption>
-            <th rowspan="2">차종</th>
-            <th rowspan="2">대여요금<br>(1시간 기준)</th>
-            <th colspan="3">할인대여요금(1시간기준)</th>
-            <tr>
-              <td class="th">주중할인</td>
-              <td class="th">주말할인</td>
-            </tr>
-            <tr>
-              <td>경형</td>
-              <td>7,200~</td>
-              <td>3,730~</td>
-              <td>5,220~</td>
-            </tr>
-            <tr>
-              <td>준중형</td>
-              <td>9,500~</td>
-              <td>4,840~</td>
-              <td>7,140~</td>
-            </tr>
-            <tr>
-              <td>중형</td>
-              <td>13,000~</td>
-              <td>5,770~</td>
-              <td>8,000~</td>
-            </tr>
-            <tr>
-              <td>대형</td>
-              <td>22,000~</td>
-              <td>6,620~</td>
-              <td>8,830~</td>
-            </tr>
-            <tr>
-              <td>승합</td>
-              <td>21,000~</td>
-              <td>9,190~</td>
-              <td>11,080~</td>
-            </tr>
-            <tr>
-              <td>SUV</td>
-              <td>17,200~</td>
-              <td>5,980~</td>
-              <td>7,980~</td>
-            </tr>
-            <tr>
-              <td>전기</td>
-              <td>18,000~</td>
-              <td>6,580~</td>
-              <td>9,790</td>
-            </tr>
+              <caption>(단위:원)</caption>
+              <tr>
+                <th rowspan="2">차종</th>
+                <th rowspan="2">대여요금(1시간기준)</th>
+                <th colspan="2">할인대여요금(1시간기준)</th>
+              </tr>
+              <tr>
+                <td class="th">주중할인</td>
+                <td class="th">주말할인</td>
+              </tr>
+              <tr>
+                <td>경형</td>
+                <td>7,200~</td>
+                <td>3,730~</td>
+                <td>5,220~</td>
+              </tr>
+              <tr>
+                <td>준중형</td>
+                <td>9,500~</td>
+                <td>4,840~</td>
+                <td>7,140~</td>
+              </tr>
+              <tr>
+                <td>중형</td>
+                <td>13,000~</td>
+                <td>5,770~</td>
+                <td>8,000~</td>
+              </tr>
+              <tr>
+                <td>대형</td>
+                <td>22,000~</td>
+                <td>6,620~</td>
+                <td>8,830~</td>
+              </tr>
+              <tr>
+                <td>승합</td>
+                <td>21,000~</td>
+                <td>9,190~</td>
+                <td>11,080~</td>
+              </tr>
+              <tr>
+                <td>SUV</td>
+                <td>17,200~</td>
+                <td>5,980~</td>
+                <td>7,980~</td>
+              </tr>
+              <tr>
+                <td>전기</td>
+                <td>18,000~</td>
+                <td>6,580~</td>
+                <td>9,790</td>
+              </tr>
           </table>
           <div class="time_info">
             <h4>시간안내</h4>
@@ -232,44 +234,55 @@
             <input type="button" class="pay_more_Btn" value="대여요금 상세보기">
           </div>
         </div>
-        <div class="drivePay_All">
+        <div class="drivePay_All dpAll" id="S_tab2">
           <table class="drivePay_table">
-            <caption>(단위:원)</caption>
-            <th>차종</th>
-            <th>주행요금(1km)</th>
-            <tr>
-              <td>경형</td>
-              <td>150~</td>
-            </tr>
-            <tr>
-              <td>준중형</td>
-              <td>130~</td>
-            </tr>
-            <tr>
-              <td>중형</td>
-              <td>130~</td>
-            </tr>
-            <tr>
-              <td>대형</td>
-              <td>160~</td>
-            </tr>
-            <tr>
-              <td>SUV</td>
-              <td>130~</td>
-            </tr>
-            <tr>
-              <td>승합</td>
-              <td>210~</td>
-            </tr>
-            <tr>
-              <td>전기</td>
-              <td>80</td>
-            </tr>
+              <caption>(단위:원)</caption>
+              <tr>
+                <th>차종</th>
+                <th>주행요금(1km)</th>
+              </tr>
+              <tr>
+                <td>경형</td>
+                <td>150~</td>
+              </tr>
+              <tr>
+                <td>준중형</td>
+                <td>130~</td>
+              </tr>
+              <tr>
+                <td>중형</td>
+                <td>130~</td>
+              </tr>
+              <tr>
+                <td>대형</td>
+                <td>160~</td>
+              </tr>
+              <tr>
+                <td>SUV</td>
+                <td>130~</td>
+              </tr>
+              <tr>
+                <td>승합</td>
+                <td>210~</td>
+              </tr>
+              <tr>
+                <td>전기</td>
+                <td>80</td>
+              </tr>
           </table>
+          <p>
+            차종 및 지역, 이벤트 등 할인조건에 따라 보다 많은 할인혜택이 제공됩니다.
+          </p>
+          <p>
+            주행요금은 유가변동에 따라 변경될 수 있습니다.
+          </p>
+          <p>
+            더 자세한 차종모델별 주행요금 정보는 ‘주행요금 상세보기’를 통해 확인할 수 있습니다.
+          </p>
           <input type="button" class="pay_more_Btn" value="대여요금 상세보기">
         </div>
       </div>
-      <div class="insurance_All">
+      <div class="insurance_All M_All" id="M_tab3">
         <h4 class="insurance_Main_Text">자동차 종합보험</h4>
         <p class="nsurance_sub_Text">
           그린카의 전 차량은 사고 발생 시, 자동차 종합보험(대인배상 무한 / 대물 배상 최대 1억원 / 자기신체사고 최대 1천5백만원)에 의거하여 보상해드립니다.
@@ -279,14 +292,16 @@
           차량손해 면책제도란, 고객님의 과실에 의한 차량 사고 발생 시 선택하신 면책 상품의 한도 내에서 지불하시면 되는 제도입니다. 면책 상품에 대한 시간당 면책 보험료는 차량, 대여시간 등 예약 조건 및 회원님의 특성에 따라 유동적으로 산정됩니다.
         </p>
         <table class="insurance_table">
-          <th>면책상품</th>
-          <th>자기부담금<br> 5만원</th>
-          <th>자기부담금<br> 30만원</th>
-          <th>자기부담금<br> 70만원</th>
-          <tr>
-            <td>면책보험료</td>
-            <td colspan="3">예약 조건에 따라 상이</td>
-          </tr>
+            <tr>
+              <th>면책상품</th>
+              <th>자기부담금<br> 5만원</th>
+              <th>자기부담금<br> 30만원</th>
+              <th>자기부담금<br> 70만원</th>
+            </tr>
+            <tr>
+              <td>면책보험료</td>
+              <td colspan="3">예약 조건에 따라 상이</td>
+            </tr>
         </table>
         <div class="bottom_info">
           <p class="bottom_info_title">알려드립니다!!</p>
@@ -299,11 +314,28 @@
           <p id="b_info_btn">차종별 휴차 보상료 상세안내</p>
         </div>
       </div>
-      <div class="benefit_All">
-        <h2 class="mainTitle">회원혜택</h2>
-        <ul class="benefit_ul">
-          
-        </ul>
+      <div class="benefit_All M_All" id="M_tab4">
+        <h3 class="subTitle">혜택</h3>
+        <table class="benefit_table">
+            <tr>
+              <td>차량대여요금</td>
+              <td>최대 85% 할인</td>
+            </tr>
+            <tr>
+              <td>포인트적립<br>(결제금액기준)</td>
+              <td>
+                대여요금 결제금액의 3% 적립<br>
+                L.POINT 0.5% 적립
+              </td>
+            </tr>
+            <tr>
+              <td>가입혜택</td>
+              <td>가입 시, 웰컴 50% 쿠폰팩 바로 증정</td>
+            </tr>
+        </table>
+        <div class="banner">
+          <a href="#none"><img src="image/benefit_banner.gif" alt=""></a>
+        </div>
       </div>
 
 
