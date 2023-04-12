@@ -78,7 +78,7 @@ $(document).ready(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
     if(scollpos > 1500){
-      $(".article3_two img").css({"opacity":"1","top":"30px"});
+      $(".article3_two img").css({"opacity":"1","top":"50px"});
       $(".article3_two_Text").css({"opacity":"1"})
       chek=false;
     }else{
