@@ -199,6 +199,7 @@ section{
   position: absolute;
   top: 160px;
   left: 10px;
+  transition: 1s;
 }
 .article3_two{
   position: relative;
@@ -210,6 +211,7 @@ section{
   position: absolute;
   top: 90px;
   left: 10px;
+  transition: 1s;
 }
 .article3_two img{
   position: absolute;
