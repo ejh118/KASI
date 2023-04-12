@@ -62,10 +62,12 @@ iframe{
   margin-top: 20px;
 }
 .sogae_img{
+  flex: 1;
   width: 100%;
   margin-left: 20px;
 }
 .sogae_Text{
+  flex: 4;
   width: 100%;
 }
 .sogae_Text_title{
