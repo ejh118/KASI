@@ -17,6 +17,7 @@ header{
   height: 60px;
   background-color: #00c88c;
   transition: 0.3s;
+  box-shadow: 0px 0px 5px #003525;
 }
 nav{
   width: 100%;
