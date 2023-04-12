@@ -68,6 +68,7 @@ main p{
   border-radius: 20px;
   border: none;
   background-color: #00c88c;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
 }
@@ -76,7 +77,9 @@ section{
   width: 100%;
   background-color: #fff;
 }
-
+.none{
+  display: none;
+}
 /* article1 */
 
 .article1{
@@ -287,15 +290,15 @@ section{
   text-align: center;
   margin-top: 70px;
 }
-.article6 p{
+.article6 h3{
   position: relative;
   font-size: 24px;
   line-height: 28px;
 }
-.article6 p span{
+.article6 h3 span{
   color: #00c88c;
 }
-.article6 p::before{
+.article6 h3::before{
   position: absolute;
   top: 100px;
   left: 50%;
@@ -325,7 +328,7 @@ section{
   background-color: #00c88c;
   color: #fff;
 }
-.article7 p{
+.article7 h3{
   padding-top: 70px;
   font-size: 24px;
 }

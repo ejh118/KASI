@@ -61,8 +61,9 @@ section h2{
 
 .list{
   width: 95%;
-  margin: auto;
+  margin: 70px auto;
   display: none;
+
 }
 .list.active{
   display: block;
@@ -163,8 +164,15 @@ margin-left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 120px;
   border-right: 1px solid #efefef;
+}
+.C_left_icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
 }
 .C_ing{
   font-size: 12px;
@@ -297,34 +305,3 @@ margin-left: 30px;
   border-radius: 50%;
 }
 
-footer{
-  width: 100%;
-  margin-top: 100px;
-  height: 370px;
-  text-align: center;
-  background-color: #333333;
-}
-
-.footer_sns{
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-}
-.footer_sns li{
-  padding: 10px;
-}
-.footer_sns li img{
-  width: 15px;
-  height: 15px;
-}
-.footer_p{
-  font-size: 8px;
-  color: #888;
-  margin-top: 20px;
-}
-.copyright{
-  margin-top: 20px;
-  font-size: 8px;
-  color: #888;
-}

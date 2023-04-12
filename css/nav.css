@@ -55,7 +55,7 @@ nav{
   right: -90%;
   width: 90%;
   height: 100vh;
-  background-color: #ffffffec;
+  background-color: #fff;
   color: #111;
   transition: 0.5s;
 }
@@ -70,10 +70,10 @@ nav{
   cursor: pointer;
 }
 .plz_login_p{
-  font-size: 18px;
+  font-size: 14px;
 }
 .plz_login_sub_p{
-  font-size: 12px;
+  font-size: 10px;
 }
 .gnb_sub_menu{
   width: 80%;
@@ -96,6 +96,9 @@ nav{
 }
 .gnb_main_menu li{
   margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  width: 60%;
 }
 .gnb_main_menu li span{
   font-size: 10px;
