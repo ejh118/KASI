@@ -78,11 +78,11 @@ $(document).ready(function(){
     let scollpos=$(this).scrollTop();
     chek=true;
     if(scollpos > 1500){
-      $(".article3_two img").css({"opacity":"1","top":"-120px"});
+      $(".article3_two img").css({"opacity":"1","top":"30px"});
       $(".article3_two_Text").css({"opacity":"1"})
       chek=false;
     }else{
-      $(".article3_two img").css({"opacity":"0","top":"-100px"});
+      $(".article3_two img").css({"opacity":"0","top":"300px"});
       $(".article3_two_Text").css({"opacity":"0"})
     }
   });
