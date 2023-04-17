@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-    //스크롤 수치
-    $(window).on("scroll", function(){
-      var scroll_top=$(this).scrollTop();
-      $(".top").text(scroll_top);
-    });
+
   
   $(".trigger").click(function(){
     $(this).toggleClass("active");
