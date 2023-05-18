@@ -6,7 +6,9 @@
 
 body{  
   position: relative;
+  z-index: 100;
   width: 100%;
+  background-color: #fff;
 }
 
 /* section 시작 */
@@ -14,6 +16,7 @@ body{
 section{
   width: 100%;
   margin-top: 100px;
+  background-color: #fff;
 }
 .mainTitle{
   text-align: center;
